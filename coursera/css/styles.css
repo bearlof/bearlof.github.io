@@ -69,6 +69,6 @@ body {
 @media (max-width: 767px) {
     .menuitem {
         width: 94%; 
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
