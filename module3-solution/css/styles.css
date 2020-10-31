@@ -36,6 +36,9 @@ body {
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: 1px solid #52095E;
 }
+.navbar-default button.navbar-toggle:focus{
+    background: transparent;
+} 
 .navbar-header button.navbar-toggle:hover {
     background-color: ivory;
 } 
@@ -70,7 +73,7 @@ body {
 /* Menu items */
 .menu-item {
     background-color: #614375;
-    border: 2px solid #100a14;
+    border: 2px solid #5d2e70;
     padding: 5px 15px 5px 15px;
     text-align: justify;
     margin-bottom: 25px;
