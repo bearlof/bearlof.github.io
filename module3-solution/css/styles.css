@@ -12,10 +12,14 @@ body {
     border: 0;
     border-radius: 0;
 }
+.container>.navbar-header {
+    margin-right: 0px; 
+    margin-left: 0px;
+}
 .navbar-brand {
     height: auto;
     margin-top: -6px;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 0px;
 }
 .navbar-brand h1 {
     font-family: 'Bebas Neue', cursive;
@@ -25,27 +29,66 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
     text-decoration: none;
 }
+/* Button */
 .navbar-toggle {
     margin-top: 15px;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: 1px solid #52095E;
 }
-#nav-list {
-    margin-top: 10px;
-  }
-  #nav-list a {
+.navbar-header button.navbar-toggle:hover {
+    background-color: ivory;
+} 
+/* Collapsable menu */
+.navbar-collapse {
+    border-top: none;
+    background-color: #FFA238;
+}
+.navbar-nav {
+    margin: 0px -15px;
+}
+#nav-list a {
     color: #132980;
     text-align: center;
-  }
-  #nav-list a:hover {
-    background: #E7E7E7;
-  }
-  #nav-list a span {
-    font-size: 1.8em;
-  }
-  @media (min-width: 768px) {
-    .nav-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+#nav-list a:hover{
+    background-color: white;
+}
+#nav-list li {
+    border-top: 1px solid #625B8A;
+}
+/** Main content **/
+.menu-header h2{
+    font-family: 'Bebas Neue', cursive;
+    color: ivory;
+}
+.menu-header> .text-center {
+    margin-top: 0px;
+}
+/* Menu items */
+.menu-item {
+    background-color: #614375;
+    border: 2px solid #100a14;
+    padding: 5px 15px 5px 15px;
+    text-align: justify;
+    margin-bottom: 25px;
+    color: ivory;
+}
+.menu-item-name {
+    font-family: 'Oswald', sans-serif;
+    color: #132980;
+    margin-top: 10px;
+}
+@media (min-width: 768px) {
+    .navbar>.container .navbar-brand {
+        margin-left: 0px;
+    }
+    #nav-list li, .nav-item, .navbar-collapse {
         visibility: hidden;
     }
-  }
+    .navbar-brand h1 {
+        font-size: 6vw;
+    }
+}
